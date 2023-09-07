@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Awwward site clone" />
     <meta name="author" content="HLK" />
-    <title>Awwwwwward</title>
+    <title>Awwwwwwards</title>
     <link rel="icon" href="images/favicon.ico" />
+    <!-- font -->
+    <script
+      src="https://kit.fontawesome.com/31f273f6bf.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
   <body>
@@ -14,7 +19,9 @@
     <header id="header">
       <button><img src="images/logo.svg" /></button>
       <div class="header_search">
-        <button class="search_btn"></button>
+        <button class="search_btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
         <span>in</span>
         <select>
           <option value="Inspiration">Inspiration</option>
@@ -40,38 +47,296 @@
         </div>
       </div>
       <nav class="navbar">
-        <button class="navbar_menu">w.home</button>
-        <ul class="navbar_box">
-          <li class="navbar_list"><a to="main">Home</a></li>
-          <li class="navbar_list"><a to="sotd">SOTD</a></li>
-          <li class="navbar_list"><a>Nominees</a></li>
-          <li class="navbar_list"><a>Directory</a></li>
-          <li class="navbar_list"><a>Collections</a></li>
-        </ul>
+        <button class="navbar_topbtn"></button>
+        <div class="navbar_box">
+          <button class="navbar_menu">
+            w.home <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="navbox_btns">
+            <li class="navbox_btn"><a to="main">Home</a></li>
+            <li class="navbox_btn"><a to="sotd">SOTD</a></li>
+            <li class="navbox_btn"><a>Nominees</a></li>
+            <li class="navbox_btn"><a>Directory</a></li>
+            <li class="navbox_btn"><a>Collections</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <!-- main -->
-    <main id="main">
-      <h1 class="main_title">SITE OF THE DAY</h1>
-      <div class="main_subtitle">
-        <strong>Novo Nordisk Heritage Website</strong> — Site of the Day -
-        <strong>7.33</strong> — Sep 6, 2023 —
-      </div>
-      <div class="main_image">
-        <button class="main_image_btn">Explore SOTD</button>
-        <span class="main_image_info">by<strong>manyone</strong></span>
-      </div>
-      <div class="main_manyone">
-        <span class="manyone_logo">
-          <!-- logo -->
-        </span>
-        <button class="mayone_btn">Manyone</button>
-      </div>
-    </main>
     <!-- sotd -->
-    <section id="sotd"></section>
+    <section id="sotd">
+      <main class="main_container">
+        <h1 class="main_title">SITE OF THE DAY</h1>
+        <div class="main_subtitle">
+          <strong>Novo Nordisk Heritage Website</strong> — Site of the Day -
+          <strong>7.33</strong> — Sep 6, 2023 —
+        </div>
+        <div class="main_image">
+          <button class="main_image_btn">Explore SOTD</button>
+          <span class="main_image_info">by<strong>manyone</strong></span>
+        </div>
+        <div class="main_manyone">
+          <span class="manyone_logo">
+            <!-- logo -->
+          </span>
+          <button class="mayone_btn">Manyone</button>
+        </div>
+      </main>
+      <div class="news_container">
+        <header class="news_heading">
+          <div class="news_heading_title">
+            <h4>News and Updates</h4>
+            <h2>Follow what's brand<br />new in digital design.</h2>
+          </div>
+          <h4 class="news_heading_sub">
+            Don't miss the <b>latest</b> happenings on <b>awwwards.</b>
+          </h4>
+        </header>
+        <div class="news_contents">
+          <ul class="news_wnews">
+            <li class="news_list">
+              <div class="news_list_thumbnail">
+                <img src="images/thumb.jpeg" alt="thumbnail" />
+              </div>
+              <div class="news_list_contents">
+                <p class="news_list_info">Element of the Day</p>
+                <h5 class="news_list_title">Menu</h5>
+              </div>
+              <span class="news_list_tag black_tag">FRESH</span>
+            </li>
+            <li class="news_list">
+              <div class="news_list_thumbnail">
+                <img src="images/thumb_2.jpg" alt="thumbnail" />
+              </div>
+              <div class="news_list_contents">
+                <p class="news_list_info">News - June 27, 2023</p>
+                <h5 class="news_list_title">
+                  C2 Montréal by KOKI-KIKO and friends wins S...
+                </h5>
+              </div>
+            </li>
+            <li class="news_list">
+              <div class="news_list_thumbnail">
+                <img src="images/thumb_3.jpg" alt="thumbnail" />
+              </div>
+              <div class="news_list_contents">
+                <p class="news_list_info">News - May 24, 2023</p>
+                <h5 class="news_list_title">
+                  Engine Station by MONOGRID: A 3D Experien...
+                </h5>
+              </div>
+            </li>
+            <li class="news_list">
+              <div class="news_list_thumbnail">
+                <img src="images/thumb_4.jpg" alt="thumbnail" />
+              </div>
+              <div class="news_list_contents">
+                <p class="news_list_info">News - May 10, 2023</p>
+                <h5 class="news_list_title">
+                  Reinventing Locomotive® Wins Site of the M...
+                </h5>
+              </div>
+            </li>
+          </ul>
+          <ul class="news_creators">
+            <li class="news_list">
+              <div class="news_list_thumbnail">
+                <img src="images/thumb_5.jpg" alt="thumbnail" />
+              </div>
+              <div class="news_list_contents">
+                <p class="news_list_info">Agency</p>
+                <h5 class="news_list_title">Airnauts</h5>
+              </div>
+              <span class="news_list_tag black_tag">INTERNATIONAL</span>
+            </li>
+            <li class="news_list">
+              <div class="news_list_thumbnail">
+                <img src="images/thumb_6.jpg" alt="thumbnail" />
+              </div>
+              <div class="news_list_contents">
+                <p class="news_list_info">Agency</p>
+                <h5 class="news_list_title">Adaptable</h5>
+              </div>
+              <span class="news_list_tag black_tag">INTERNATIONAL</span>
+            </li>
+            <li class="news_list">
+              <div class="news_list_thumbnail">
+                <img src="images/thumb_7.jpg" alt="thumbnail" />
+              </div>
+              <div class="news_list_contents">
+                <p class="news_list_info">Agency - South Korea</p>
+                <h5 class="news_list_title">FAVE®</h5>
+              </div>
+            </li>
+            <li class="news_list">
+              <div class="news_list_thumbnail">
+                <img src="images/thumb_8.jpg" alt="thumbnail" />
+              </div>
+              <div class="news_list_contents">
+                <p class="news_list_info">Agency - South Korea</p>
+                <h5 class="news_list_title">STUDIO-JT</h5>
+              </div>
+            </li>
+          </ul>
+          <figure class="featured">
+            <img src="images/digital.png" alt="Featured main image" />
+            <figcaption>
+              An inspiring event for the digital design community<br />
+              <strong
+                >Bird Tickets on sale for a limited time, grab yours
+                here!</strong
+              >
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
     <!-- nominees -->
-    <section id="nominees"></section>
+    <section id="nominees">
+      <header class="nominees_heading">
+        <h5>Latest</h5>
+        <h2>NOMINEES</h2>
+        <span class="nominess_pointbox">Cool Sites!</span>
+        <p>Vote for the latest websites on <br />awwwards</p>
+      </header>
+      <article class="nominees_vote">
+        <div class="nominees_contents">
+          <ul class="nominees_card-box">
+            <li class="nomiees_card">
+              <div class="nomiees_card_image">
+                <img src="images/nom_1.jpg" alt="vote image" />
+                <div class="nomiees_card_hover">
+                  <button class="nomiees_vote_btn hoverGrayBtn">
+                    <i class="fa-solid fa-chevron-right"></i> Vote Now
+                  </button>
+                  <div class="nomiees_card_hover_link">
+                    <p>
+                      <small>WEBSITE</small><br />
+                      Tvinenko A. [T-KO] Portfolio
+                    </p>
+                    <div class="nomiees_card_link_btns">
+                      <a href="#"><i class="fa-solid fa-location-arrow"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nomiees_card_info">
+                <h4 class="nomiees_card_title">Tvinenko A. [T-KO] Portfolio</h4>
+                <div class="nomiees_card_author">
+                  <small>by</small>
+                  <span><img src="images/nom_thumb_1.jpg" /></span>
+                  <p>Anton Tvinenko</p>
+                </div>
+              </div>
+            </li>
+            <li class="nomiees_card">
+              <div class="nomiees_card_image">
+                <img src="images/nom_2.jpg" alt="vote image" />
+                <div class="nomiees_card_hover">
+                  <button class="nomiees_vote_btn hoverGrayBtn">
+                    <i class="fa-solid fa-chevron-right"></i> Vote Now
+                  </button>
+                  <div class="nomiees_card_hover_link">
+                    <p>
+                      <small>WEBSITE</small><br />
+                      Somefolk® Digital Goods
+                    </p>
+                    <div class="nomiees_card_link_btns">
+                      <a href="#"><i class="fa-solid fa-location-arrow"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nomiees_card_info">
+                <h4 class="nomiees_card_title">Somefolk® Digital Goods</h4>
+                <div class="nomiees_card_author">
+                  <small>by</small>
+                  <span><img src="images/nom_thumb_2.jpg" /></span>
+                  <p>Somefolk®</p>
+                </div>
+              </div>
+            </li>
+            <li class="nomiees_card">
+              <div class="nomiees_card_image">
+                <img src="images/nom_3.jpg" alt="vote image" />
+                <div class="nomiees_card_hover">
+                  <button class="nomiees_vote_btn hoverGrayBtn">
+                    <i class="fa-solid fa-chevron-right"></i> Vote Now
+                  </button>
+                  <div class="nomiees_card_hover_link">
+                    <p>
+                      <small>WEBSITE</small><br />
+                      LM / AL - (C) PORTFOLIO 23
+                    </p>
+                    <div class="nomiees_card_link_btns">
+                      <a href="#"><i class="fa-solid fa-location-arrow"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nomiees_card_info">
+                <h4 class="nomiees_card_title">LM / AL - (C) PORTFOLIO 23</h4>
+                <div class="nomiees_card_author">
+                  <small>by</small>
+                  <span><img src="images/nom_thumb_3.jpg" /></span>
+                  <p>A Lajara</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button class="nomiees_card_slider_btn hoverGrayBtn">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="nomiees_site_link">
+          Check out all submitted websites <br />
+          <i class="fa-solid fa-arrow-right-long"></i>
+          <a href="#"> View Nominees </a>
+        </div>
+      </article>
+      <!-- nomiees market -->
+      <article class="nomiees_market">
+        <header class="nominees_market_header">
+          <small>market</small>
+          <h2>
+            A curated marketplace<br />
+            for digital & physical products
+          </h2>
+        </header>
+        <div class="nominees_contents">
+          <ul class="nominees_card-box">
+            <li class="nomiees_card">
+              <div class="nomiees_card_image">
+                <img src="images/products_1.png" alt="image" />
+              </div>
+              <ul class="nomiees_card_market_info">
+                <li class="market_card_heading">
+                  <h4 class="nomiees_card_title">
+                    Whole Shop Bundle by Craft Supply Co
+                  </h4>
+                  <div class="nomiees_card_author"></div>
+                </li>
+                <li class="market_card_list">
+                  <p><small>by</small> crocoblck</p>
+                  <div class="market_card_price">
+                    <b>from</b>
+                    <span>43<sup>USD</sup></span>
+                  </div>
+                </li>
+                <li class="market_card_list">
+                  <span>View Product</span>
+                  <button>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
     <!-- directory -->
     <section id="directory"></section>
     <!-- collections -->
